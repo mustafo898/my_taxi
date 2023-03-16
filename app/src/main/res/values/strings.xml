@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Simple Task</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="user_location_permission_explanation">Aquesta app necessita permisos per mostrar la seva funcionalitat.</string>
+    <string name="user_location_permission_not_granted">No heu proporcionat permisos de localització.</string>
+    <string name="new_location">New lat: %1$s New longitude: %2$s</string>
+
+    <!--    <string name="mapbox_access_token">sk.eyJ1IjoiY29tcG9zZXIiLCJhIjoiY2xleDhzMW5mMGJhdDNybjBuaXR5bG56ZiJ9.jZIalAAWW8oSzQZUlE3SPQ</string>-->
+</resources>

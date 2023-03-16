@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#1E1E1E</color>
+
+    <color name="black_1">#BEBEBE</color>
+    <color name="transparent">#BEBEBE</color>
+    <color name="white_1">#BEBEBE</color>
+    <color name="gradient_1">#BEBEBE</color>
+    <color name="gradient_2">#6C6C6C</color>
+    <color name="green">#00A43E</color>
+    <color name="black_2">#2C2C2C</color>
+</resources>

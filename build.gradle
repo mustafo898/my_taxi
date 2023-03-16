@@ -1,0 +1,48 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    dependencies {
+
+        classpath 'com.google.dagger:hilt-android-gradle-plugin:2.44'
+    }
+    repositories {
+        mavenCentral()
+        maven {
+            url 'https://api.mapbox.com/downloads/v2/releases/maven'
+            authentication {
+                basic(BasicAuthentication)
+            }
+            credentials {
+                // Do not change the username below.
+                // This should always be `mapbox` (not your username).
+                username = "mapbox"
+                // Use the secret token you stored in gradle.properties as the password
+                password = project.properties['SDK_REGISTRY_TOKEN'] ?: "sk.eyJ1IjoiY29tcG9zZXIiLCJhIjoiY2xld3lsbHZ4MGplNzN3a2N3M3BoNWpwdSJ9.c-mm4_cmhox5gZmfOWRkSw"
+            }
+        }
+    }
+}
+
+plugins {
+    id 'com.android.application' version '7.3.1' apply false
+    id 'com.android.library' version '7.3.1' apply false
+    id 'org.jetbrains.kotlin.android' version '1.7.20' apply false
+}
+
+
+//allprojects {
+//    repositories {
+//        maven {
+//            url 'https://api.mapbox.com/downloads/v2/releases/maven'
+//            authentication {
+//                basic(BasicAuthentication)
+//            }
+//            credentials {
+//                // Do not change the username below.
+//                // This should always be `mapbox` (not your username).
+//                username = "mapbox"
+//                // Use the secret token you stored in gradle.properties as the password
+//                password = project.properties['SDK_REGISTRY_TOKEN'] ?: "sk.eyJ1IjoiY29tcG9zZXIiLCJhIjoiY2xld3lsbHZ4MGplNzN3a2N3M3BoNWpwdSJ9.c-mm4_cmhox5gZmfOWRkSw"
+//            }
+//        }
+//    }
+//}
